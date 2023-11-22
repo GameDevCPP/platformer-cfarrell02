@@ -60,6 +60,7 @@ void Level1Scene::Update(const double& dt) {
 
   if (ls::getTileAt(player->getPosition()) == ls::END) {
     Engine::ChangeScene((Scene*)&level2);
+    return;
   }
   Scene::Update(dt);
 }
